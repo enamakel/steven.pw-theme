@@ -1,0 +1,32 @@
+{
+  "name": "steven.pw",
+  "authors": [
+    "Steven Enamakel <stevent95@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "GNU GPLv3",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "masonry": "~3.3.2",
+    "jquery": "~2.1.4",
+    "imagesloaded": "~3.2.0"
+  },
+  "overrides": {
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    }
+  }
+}
