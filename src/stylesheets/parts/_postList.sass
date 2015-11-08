@@ -1,0 +1,53 @@
+.posts-list.grid
+  margin-bottom: 15px
+  .grid-item
+    padding: 5px
+
+  .post-excerpt
+    overflow: hidden
+    img
+      width: 100%
+
+    h2
+      padding: 10px
+      font-size: rem-calc(14px)
+      margin: 0
+      a
+        color: #000
+    p, h2
+      margin-top: 0
+
+    .excerpt
+      padding: 1px 10px
+      font-size: 12px
+
+    .meta
+      // opacity: 0.6
+      font-size: 11px
+      margin: 10px
+
+
+  .post-portfolio
+    position: relative
+
+    a
+      color: #000
+
+    h2
+      +single-transition(all, 0.1s)
+      background: #FFF
+      bottom: 0
+      display: inline-block
+      left: 0
+      font-size: 12px
+      margin: 0
+      max-width: 100%
+      opacity: 0
+      padding: 10px
+      position: absolute
+
+    img
+      width: 100%
+
+    &:hover h2
+      opacity: 1

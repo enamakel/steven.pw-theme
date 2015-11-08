@@ -1,0 +1,38 @@
+/**
+ * Theme Name: Steven
+ * Description: A simple theme for steven's blog
+ * Version: 0.3.0
+ * Author: Steven Enamakel
+ * Author URI: http://alienwp.com
+ * License: GNU General Public License v3.0
+ */
+
+@import "foundation/style";
+@import "font";
+@import "header";
+@import "footer";
+
+@import "parts/categories";
+@import "parts/loopnav";
+@import "parts/postList";
+
+@import "pages/blog";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/portfolio";
+@import "pages/page";
+@import "pages/post";
+
+
+body
+  background: #FFF !important
+  font-size: 1rem
+  @extend .font-roboto
+
+a, a:visited
+  color: #2557e9
+  text-decoration: none
+
+h1
+  font-size: rem-calc(33px)
+  @extend .font-roboto

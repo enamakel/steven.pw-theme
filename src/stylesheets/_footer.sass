@@ -1,0 +1,65 @@
+footer
+  margin: 20px 0
+  .footer-content
+    opacity: 0.3
+    @extend .font-roboto
+    text-align: center
+    font-size: 12px
+    font-weight: bold
+    margin: 20px 0
+    a
+      color: #000
+      text-decoration: none
+
+  .subscription
+    text-align: center
+    border: 1px solid #EEE
+    padding: 40px 0
+
+    .title
+      font-weight: bold
+      font-size: 14px
+      text-transform: uppercase
+    .spam
+      margin: 0
+      font-size: 12px
+      color: #999
+
+    .email-box
+      +clearfix
+      border: 1px solid #999
+      overflow: hidden
+      max-width: 300px
+      margin: 10px auto
+      position: relative
+
+      -webkit-border-radius: 20px
+      -moz-border-radius: 20px
+      border-radius: 20px
+
+      input[type='email']
+        outline: none
+        float: left
+        border: 0
+        padding: 10px 15px
+
+      .submit_subscribe
+        +single-transition
+        float: right
+        text-indent: -9999px
+        padding: 0px
+        width: 28px
+        height: 28px
+        position: absolute
+        right: 6px
+        top: 3px
+        border: 0px
+        line-height: 20px
+        border-radius: 100%
+        color: #FFF
+        background-color: #000
+        background-image: url(./images/check.png)
+        background-size: 18px 18px
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        opacity: 0

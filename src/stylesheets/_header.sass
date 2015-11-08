@@ -1,0 +1,98 @@
+header
+  line-height: 1
+
+  @media #{$large-up}
+    margin-bottom: 70px
+
+  .grabber
+    +single-transition
+    background: #000
+    width: 40px
+    height: 40px
+    position: fixed
+    top: 25px
+    right: 25px
+    z-index: 99
+
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    border-radius: 100%
+
+    .icon
+      width: 40px
+      height: 40px
+      background: url(images/header_grabber.png) no-repeat
+      background-size: 40%
+      background-position: 50%
+      cursor: pointer
+
+
+  .overlay
+    +single-transition
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0,0,0,0.8)
+    z-index: 5
+    width: 100%
+    height: 100%
+    display: none
+    opacity: 0
+
+
+  nav .menu
+    +single-transition
+    position: fixed
+    right: -0
+    top: 0
+    bottom: 0
+    background: #FFF
+    border-left: 1px solid #EEE
+    text-align: right
+    z-index: 10
+
+    -ms-transform: translateX(100%)
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+
+    ul
+      +clearfix
+      padding: 20px
+      display: inline-block
+
+      li
+        +single-transition
+        list-style: none
+        margin-bottom: 15px
+        opacity: 0.2
+        &.current_page_item, &:hover
+          opacity: 1
+
+        a
+          @extend .font-roboto
+          color: #000 !important
+          font-size: rem-calc(14px)
+          font-weight: bold
+          text-decoration: none
+          text-transform: uppercase
+
+
+  &.active
+    .overlay
+      display: block
+      opacity: 1
+
+    nav .menu
+      -ms-transform: translateX(0)
+      -webkit-transform: translateX(0)
+      transform: translateX(0)
+
+    .grabber
+      background: #008AFF
+      -webkit-border-radius: 10%
+      -moz-border-radius: 10%
+      border-radius: 10%
+
+      -ms-transform: translateX(-115px)
+      -webkit-transform: translateX(-115px)
+      transform: translateX(-115px)

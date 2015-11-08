@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500)
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+// Define CSS font-specific classes
+.font-awesome
+  font: normal normal normal 14px/1 "FontAwesome";
+  font-size: 100%;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+
+.font-roboto
+  font-family: "Roboto", sans-serif
+
+.font-playfair
+  font-family: "Playfair Display", serif
+
+
+// Define CSS text-specific classes
+// .font-text
+//   @extend .font-droid
+
+// .font-thin
+//   @extend .font-palanquin
+//   font-weight: 100
+
+// .font-bold
+//   @extend .font-droid
+//   font-weight: 700
+
+
+.font-title-serif
+  @extend .font-playfair
+  font-weight: bold
+
+// .icon
+//   @extend .font-awesome
+
+// Default page Font
+body
+  @extend .font-droid
