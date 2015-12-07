@@ -5,14 +5,11 @@ var runSequence = require("run-sequence");
 
 var dependencies = [
   "bower",
-  "checksum",
   "coffee",
   "docs",
   "jade",
-  "md5",
   "minify",
   "sass",
-  "server",
   "watch"
 ];
 
