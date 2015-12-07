@@ -22,7 +22,7 @@
             <a href="#subscribe" class="buttonize submit_form submit_subscribe">Subscribe</a>
           </div>
           <p class="spam">
-            Don't worry; I hate spam too
+            Don't worry; You'll only get an email whenever a new post is published.
             <br/>
             You can un-subscribe at any time with one click
           </p>

@@ -1,13 +1,25 @@
 module.exports =
   coffee:
-    dest: "assets"
-    src: "src/javascript/common.coffee"
-
+    dest: "build"
+    src: "src/js/common.coffee"
 
   sass:
     dest: ""
-    src: "src/stylesheets/style.sass"
+    src: "src/css/style.sass"
     targetFilename: "style.css"
+    targetFilenameMin: "style.css"
+
+
+  md5:
+    dest: "content/build/md5"
+    src: "content/build/*.{js,css}"
+
+
+  checksum:
+    dest: "build"
+    filename: "checksums"
+    hash: "md5"
+    src: "content/build/*.{js,css}"
 
 
   minify:
@@ -15,17 +27,40 @@ module.exports =
     jsSrc: "content/build/*.js"
 
 
-  php:
-    dest: ""
-    src: "src/theme/**/*.jade"
+  jade:
+    dest: "content/build"
+    src: "core/client/**/*.jade"
+    targetFilename: "templates.js"
+    targetFilenameMin: "templates.js"
+
 
   watch:
-    coffeePattern: "src/**/*.{coffee, js, json}"
+    coffeePattern: "src/**/*.{coffee,js,json}"
     jadePattern: "core/client/**/*.jade"
     sassPattern: "src/**/*.{sass, scss, css}"
-    phpPattern: "src/**/*.jade"
+    serverPattern: "core/server/views/*.coffee"
+
+
+  docs:
+    backend:
+      dest: "docs/server"
+      src: "core/server/**/*.coffee"
+    frontend:
+      dest: "docs/client"
+      src: "core/client/**/*.coffee"
+    hostname: "http://localhost:8000"
+
+
+  server:
+    footer:
+      dest: "core/server/views/"
+      src: "core/server/views/**/*.coffee"
+    db:
+      dest: "core/server/db"
+      filename: "populate.js"
+      src: "core/server/db/*.coffee"
 
 
   bower:
-    dest: "assets"
+    dest: "build"
     targetFilename: "libraries.js"

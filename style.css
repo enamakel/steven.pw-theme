@@ -1,10 +1,13 @@
 /**
- * Theme Name: Steven
- * Description: A simple theme for steven's blog
+ * Theme Name: Hatch
+ * Theme URI: http://alienwp.com/themes/hatch/
+ * Description: A simple and minimal portfolio theme for photographers, illustrators, designers, or photobloggers. Responsive layout, optimized for mobile browsing (iPhone and iPad). Ideal for sites where images are the main type of content. The customization options include theme settings page, custom background, custom header.
  * Version: 0.3.0
- * Author: Steven Enamakel
+ * Author: AlienWP
  * Author URI: http://alienwp.com
- * License: GNU General Public License v3.0
+ * Tags: fluid-layout, theme-options, threaded-comments, microformats, translation-ready, rtl-language-support, one-column, two-columns, right-sidebar, custom-background, custom-header, featured-images
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);

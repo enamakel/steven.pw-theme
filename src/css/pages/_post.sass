@@ -1,0 +1,75 @@
+body.singular-post
+  main
+    max-width: 700px
+
+  time
+    @extend .font-roboto
+    opacity: 0.3
+    font-weight: bold
+    color: #1d1d1d
+    text-transform: uppercase
+
+  .featured-thumb
+    text-align: center
+    img.featured
+      margin: 0 auto
+
+      @media #{$large-up}
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+
+  .post-content
+    font-size: rem-calc(14px)
+
+
+  .post-aside, .entry-content
+    background: #FFF
+    margin: 15px
+
+  .entry-content
+    +clearfix
+
+  .byline
+    font-size: rem-calc(12px)
+    margin-bottom: 5px
+
+  .post-title
+    margin: 0
+
+  h1, h2, h3, h4, h5, h6
+    margin-bottom: 10px
+
+  h1, h2, h3, h4, h5, h6
+    color: #000
+
+  h2, h3, h4, h5, h6
+    margin-top: 40px
+
+  p
+    margin-top: 0
+    margin-bottom: 15px
+
+  .wp-caption-text
+    padding: 5px
+    font-size: 12px
+    color: #999
+    text-align: center
+
+  a
+    text-decoration: none
+
+  img
+    width: 100%
+    &.alignleft
+      margin: 0 15px 15px 0
+      text-align: left
+
+  cite
+    font-weight: bold
+
+  blockquote
+    border-left: 5px solid #008AFF
+    margin-left: 20px
+    padding-left: 20px
+    font-style: italic

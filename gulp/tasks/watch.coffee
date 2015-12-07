@@ -11,4 +11,4 @@ module.exports = (gulp, config) -> ->
   gulp.watch config.coffeePattern, ["watch:coffee"]
   gulp.watch config.jadePattern, ["watch:jade"]
   gulp.watch config.sassPattern, ["watch:sass"]
-  gulp.watch config.phpPattern, ["php"]
+  gulp.watch config.serverPattern, ["server"]
