@@ -11,7 +11,6 @@
       </main><!-- #main -->
 
       <footer id="footer">
-
         <section class="subscription">
           <div class="title">Subscribe to the blog</div>
           <div class="email-box">
@@ -23,13 +22,9 @@
             <br/>
             You can un-subscribe at any time with one click
           </p>
-
         </section>
 
-        <div class="footer-content">
-          <?php echo apply_atomic_shortcode("footer_content"/*, hybrid_get_setting("footer_insert")*/); ?>
-        </div>
-
+        <div class="footer-content">Copyright &copy; 2014 &middot; Steven Enamakel</div>
       </footer><!-- #footer -->
     </div><!-- .wrap -->
   </div><!-- #container -->
