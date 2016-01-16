@@ -1,4 +1,25 @@
-.contact-form
-  max-width: 500px
-  input, textarea
-    margin-top: 7px
+
+body.page-template-contact
+  main
+    text-align: center
+  form
+    max-width: 500px
+    margin: 0 auto
+    input, textarea
+      +radius(2px)
+      margin: 10px 0
+      padding: 10px
+      width: 100%
+      border: 1px solid #CCC
+      outline: none
+      &:focus
+        border-color: blue
+    textarea
+      min-height: 200px
+    input[type='submit']
+      background: #30cd72
+      color: #FFF
+      border: 0
+
+  footer
+    display: none

@@ -43,7 +43,9 @@ footer
         border: 0
         padding: 10px 15px
 
+
       .submit_subscribe
+        opacity: 0
         +single-transition
         float: right
         text-indent: -9999px
@@ -58,8 +60,10 @@ footer
         border-radius: 100%
         color: #FFF
         background-color: #000
-        background-image: url(./images/check.png)
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAACK0lEQVR4Ae3BP2uVdxgA0OfaGAlUcQkobQ0mIBILXQoiBESXbiopoh9AcBGpQj%2BAECwWOnXQQQgI4geIRQSHUhEU8Q%2FRUVGjKGgah1YLeuNRyJCKSZpfcrXvzfucE5FSSimllFJKKaWUUkppCcIKnEVvpLnhF1MeoDfSzLANk6aNoTfS%2B7AaYz40hr5I03Da7MbQFykCe%2Fy3h%2BiLOsNXmDA%2FD9EXdYQGLijze9QRDinzGpujbvA1%2FlHmSNQNOnFTmSvoiLrBz8r8jQ1RN9iKpjL7o26wCveVGUEj6ganlHmKNVE32K3czqg6LIsWwhf4U5mTUXXYhNvYHC2ABs4rcxefR5WhC6OmvMKPaMQi4KAyTWyJqsNxHzqH7lgA9OOlMkNRdRg0uyfYHgXQiWvKXMXyqDL0YMLcJjGEjpgHHFXmBTZGlaEDl8zfRayLOWAATWUORNVhSLlx7IoZYCXuKXMOjagybEfTwrzBr1gR%2F4JhZcaxNqoM3Xhs8W5gQ7yDQeUGo%2BowonX%2BwkGMKzMc7QA7MO7%2Fcw8ro13gS%2Fzh02tiINoNPsMRNH06P0U7wzY88vFdR2e0O3TjNx%2FPS%2FTHUoEGDuOV1vshliJ8izta5xmWxVKFVThj8SbxTdQB9uGFhWlib9QJ%2BnFLuaNRR%2BjCCfN3CR1RZ9iN5%2BY2gZ5IEViPy2b3faRpWI5jeON9xyPNDN%2FhqSmj6Io0O6zBCPojpZRSSimllFJKqTbeAoCXeyO%2ByQixAAAAAElFTkSuQmCC)
         background-size: 18px 18px
         background-position: 50% 50%
         background-repeat: no-repeat
-        opacity: 0
+
+      input[type='email']:valid ~ .submit_subscribe
+            opacity: 1

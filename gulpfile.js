@@ -6,7 +6,6 @@ var runSequence = require("run-sequence");
 var dependencies = [
   "bower",
   "coffee",
-  "docs",
   "jade",
   "minify",
   "sass",

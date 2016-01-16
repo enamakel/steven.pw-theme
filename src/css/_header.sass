@@ -2,7 +2,7 @@ header
   line-height: 1
 
   @media #{$large-up}
-    margin-bottom: 70px
+    margin-bottom: 30px
 
   .grabber
     +single-transition
@@ -76,8 +76,12 @@ header
           text-decoration: none
           text-transform: uppercase
 
+main, #home-intro, footer
+  +single-transition
+  // +force-gpu
 
-  &.active
+body.show-header-submenu
+  header
     .overlay
       display: block
       opacity: 1
@@ -87,12 +91,21 @@ header
       -webkit-transform: translateX(0)
       transform: translateX(0)
 
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+
     .grabber
       background: #008AFF
-      -webkit-border-radius: 10%
-      -moz-border-radius: 10%
-      border-radius: 10%
+      // -webkit-border-radius: 10%
+      // -moz-border-radius: 10%
+      // border-radius: 10%
 
       -ms-transform: translateX(-115px)
       -webkit-transform: translateX(-115px)
       transform: translateX(-115px)
+
+  main, #home-intro, footer
+    -ms-transform: translateX(-115px)
+    -webkit-transform: translateX(-115px)
+    transform: translateX(-115px)

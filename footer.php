@@ -11,18 +11,20 @@
       </main><!-- #main -->
 
       <footer id="footer">
-        <section class="subscription">
+        <form class="subscription" action="http://news.us11.list-manage.com/subscribe" method="GET">
           <div class="title">Subscribe to the blog</div>
           <div class="email-box">
-            <input type="email" placeholder="What's your email?"/>
-            <a href="#subscribe" class="buttonize submit_form submit_subscribe">Subscribe</a>
+            <input type="hidden" name="id" value="22687ec858">
+            <input type="hidden" name="u" value="59d9079d5afffec07abce7d7e">
+            <input type="email" name="MERGE0" required placeholder="What's your email?"/>
+            <input type="submit" class="buttonize submit_form submit_subscribe"/>
           </div>
           <p class="spam">
             Don't worry; You'll only get an email whenever a new post is published.
             <br/>
             You can un-subscribe at any time with one click
           </p>
-        </section>
+        </form>
 
         <div class="footer-content">Copyright &copy; 2014 &middot; Steven Enamakel</div>
       </footer><!-- #footer -->

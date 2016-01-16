@@ -16,13 +16,30 @@
 <!-- Mobile viewport optimized -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-
 <!-- Title -->
 <title><?php hybrid_document_title(); ?></title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url'); ?>" />
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 <!-- WP Head -->
 <?php wp_head(); ?>
@@ -37,14 +54,12 @@
   if(is_front_page()) { ?>
     <section id="home-intro" class="font-title-serif">
       <div class="row">
-        <div class="hello">- Hello</div>
+        <div class="hello">Hello.</div>
         <p>
           My name is <span>Steven Enamakel</span>. I'm a <span>Computer Scientist</span> &amp; <span>Mathematican</span>.
-          I also do <span>Graphic Design</span> but that's more of a hobby.
+          I also do <span>Graphic Design</span> as a hobby and I eat a ton of <span>chocolate for breakfast</span>, daily.
         </p>
-        <p>
-          I work as a <span>consultant</span> and I carry out my own research.
-        </p>
+        <p>To know more about me, unplug your computer or smash your screen.</p>
       </div>
     </section>
   <?php } ?>

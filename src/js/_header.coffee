@@ -1,12 +1,11 @@
 module.exports = ($) ->
   $grabber = $ "header .grabber"
   $header  = $ "header"
+  $body  = $ "body"
   $overlay = $ "header .overlay"
 
 
-  toggleHeader = ->
-    $header.toggleClass "active"
-  console.log 'sdf', $header
+  toggleHeader = -> $body.toggleClass "show-header-submenu"
 
   $grabber.click toggleHeader
   $overlay.click toggleHeader
