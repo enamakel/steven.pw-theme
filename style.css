@@ -1937,6 +1937,8 @@ body.singular-post a {
   text-decoration: none; }
 
 body.singular-post img {
+  border-radius: 5px;
+  border: 1px solid #DDD;
   width: 100%; }
   body.singular-post img.alignleft {
     margin: 0 15px 15px 0;
