@@ -19,7 +19,7 @@
     <?php get_template_part("template/loop-nav"); // Loads the loop-nav.php template. ?>
 
 
-    <div class="row collapse grid posts-list top-border">
+    <div class="row collapse grid grid2 posts-list top-border">
       <?php
         query_posts("category_name=design");
         if (have_posts()) {
