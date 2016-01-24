@@ -51,6 +51,9 @@ function custom_theme_setup() {
 
   /* Enqueue scripts (and related stylesheets) */
   add_action('wp_enqueue_scripts', 'custom_scripts');
+
+  /* Remove http:// and https:// and replace with // */
+  add_filter('template_directory_uri', 'removeHTTPorHTTPS', 99);
 }
 
 
@@ -95,12 +98,16 @@ function custom_scripts() {
 
 /**
  * Pagination args
- *
  */
 function custom_pagination_args($args) {
   $args['prev_text'] = __('&larr; Previous', 'hatch');
   $args['next_text'] = __('Next &rarr;', 'hatch');
   return $args;
+}
+
+
+function removeHTTPorHTTPS ($template_directory_uri, $template) {
+  return preg_replace('/https?:\/\//', '//', $template_directory_uri);
 }
 
 
