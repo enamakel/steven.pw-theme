@@ -1764,6 +1764,9 @@ span.category a {
 
 .posts-list.grid {
   margin-bottom: 15px; }
+  .posts-list.grid.top-border {
+    border-top: 1px solid #EEE;
+    padding-top: 15px; }
   .posts-list.grid .grid-item {
     padding: 5px; }
   .posts-list.grid .post-excerpt {
