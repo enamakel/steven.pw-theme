@@ -16,8 +16,6 @@
         } else get_template_part("template/loop-error"); // Loads the loop-error.php template.
       ?>
     </div><!-- .grid -->
-    <?php get_template_part("template/loop-nav"); // Loads the loop-nav.php template. ?>
-
 
     <div class="row collapse grid grid2 posts-list top-border">
       <?php
@@ -30,8 +28,6 @@
         } else get_template_part("template/loop-error"); // Loads the loop-error.php template.
       ?>
     </div><!-- .grid -->
-    <?php get_template_part("template/loop-nav"); // Loads the loop-nav.php template. ?>
-
   </div><!-- #content -->
 
 <?php get_footer(); // Loads the footer.php template. ?>
