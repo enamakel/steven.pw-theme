@@ -54,6 +54,14 @@ function custom_theme_setup() {
 
   /* Remove http:// and https:// and replace with // */
   add_filter('template_directory_uri', 'removeHTTPorHTTPS', 99);
+  add_filter('stylesheet_directory_uri', 'removeHTTPorHTTPS', 99);
+  add_filter('nav_menu_link_attributes', 'nav_link_removeHTTPorHTTPS', 99);
+}
+
+
+function nav_link_removeHTTPorHTTPS($atts, $item, $args, $depth) {
+  $atts["href"] = removeHTTPorHTTPS($atts["href"]);
+  return $atts;
 }
 
 
@@ -106,8 +114,8 @@ function custom_pagination_args($args) {
 }
 
 
-function removeHTTPorHTTPS ($template_directory_uri, $template) {
-  return preg_replace('/https?:\/\//', '//', $template_directory_uri);
+function removeHTTPorHTTPS ($uri) {
+  return preg_replace('/https?:\/\//', '//', $uri);
 }
 
 
